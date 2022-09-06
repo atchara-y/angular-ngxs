@@ -1,0 +1,6 @@
+<div>
+    <label for="countries">Choose a country:</label>
+    <select>
+        <option *ngFor="let item of (country$ | async)!.countryData" [value]="item.id">{{ item.name }}</option>
+    </select>
+</div>
